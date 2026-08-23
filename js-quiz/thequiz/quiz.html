@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page!!</title>
+
+    <link rel="stylesheet" href="quizdesign.css">
+    <link rel="stylesheet" href="floatinghearts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Elms+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+</head>
+
+
+<body>
+
+    <div class="hearts">
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+    </div>
+
+    <header>
+        <h1>Terd and Kim Quiz!!</h1>
+    </header>
+
+    <div id="quizpage">
+
+        <question>
+            <h2 id="question"></h2>
+        </question>
+
+        <div id="btn">
+            <button id="answerA" onclick="checkAnswer(0)"></button>
+            <button id="answerB" onclick="checkAnswer(1)"></button>
+            <button id="answerC" onclick="checkAnswer(2)"></button>
+            <button id="return" onclick="returnToHome()">Return to Home</button>
+        </div>
+        
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    min-height: 100vh;
+    background: linear-gradient(
+        
+        #ffb6c1,
+        #f8d7e3,
+        #e8c7ff
+    );
+}
+
+header{
+    background-color: #f8d7e3;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 100;
+    font-size: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+header:hover{
+    transform: translateY(-4px); /* Gentle float effect */
+}
+
+#quizpage{
+    min-height: 100vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#question{
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#question:hover{
+    transform: translateY(-4px); /* Gentle float effect */
+}
+
+#btn{
+    display: grid;
+    gap: 25px;
+    padding: 25px;
+}
+
+button{
+    background-color: #ffffff;
+    padding: 2.5rem 3.5rem;
+    font-family: "DynaPuff", cursive, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333333;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-4px); /* Gentle float effect */
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(232, 199, 255, 0.6);
+}
+
+button:active {
+    transform: translateY(0);
+    background-color: #f8d7e3;
+}
+
+@media (max-width: 768px){
+    #quizpage{
+        width: 100%;
+    }
+}
+
+/* 1. Changes the general body text font */
+.swal2-popup,
+.swal2-html-container {
+    font-family: 'Elms Sans', sans-serif !important;
+}
+
+/* 2. Changes the title font */
+.swal2-title {
+    font-family: 'Elms Sans', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+/* 3. Changes the button font (e.g., DynaPuff) */
+.swal2-confirm,
+.swal2-cancel {
+    font-family: 'DynaPuff', cursive, sans-serif !important;
+}
